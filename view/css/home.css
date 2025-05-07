@@ -1,0 +1,145 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+.card-header {
+    position: relative;
+    min-height: 100vh;
+    padding-right: 100px;
+    background-image: url('/view/all-shirt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.card-header::before {
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.card-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.card-header .header-content a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.card-header .header-content a:hover {
+    color: rgb(46, 46, 46);
+}
+
+#left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+#logo {
+    width: 15%;
+    box-shadow: rgba(68, 68, 68, 0.35) -5px 2px 15px;
+    border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+}
+
+.custom-carousel {
+    position: relative;
+    width: 100%;
+    margin: 40px auto;
+    background-color: #f8f9fa;
+    padding: 40px;
+}
+
+.carousel-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    padding: 10px;
+}
+
